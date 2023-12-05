@@ -9,6 +9,74 @@
     <title>Kalkulator Segitiga</title>
 </head>
 <body>
-    
+    <div id="tentang">
+        <h1>KALKULATOR LUAS DAN KELILING SEGITIGA - oleh HENDRI SAPUTRA</h1>
+        <h4>
+            Selamat datang di mini project pada revoU Software Engineering Saya
+        </h4>
+        <br>
+    </div>
+    <header id="navigation-bar">
+        <h3 id="logo">Kalkulator Segitiga</h3>
+        <nav class="navigation">
+            <a href="#luas-segitiga">LUAS</a>
+            <a href="#keliling-segitiga">KELILING</a>
+        </nav>
+    </header>
+<!--END HEADER-->
+<main>
+    <div class="container-gambar">
+        <h1 id="luas-segitiga">PENGHITUNG LUAS SEGITIGA</h1>
+        <img src="img/rumus-luas-segitiga.png" alt="rumus-luas-segitiga" width="350px">
+    </div>
+    <section class="input-luas-section" >
+        <label for="inputAlas" id="label-alas">Alas (a)</label>
+        <input type="number" id="inputAlas" class="hendri-input" placeholder="Masukkan Panjang Alas Segitiga">
+
+        <label for="inputTinggi" id="label-tinggi">Tinggi (t)</label>
+            <input type="number" id="inputTinggi" class="hendri-input" placeholder="Masukkan Tinggi Segitiga">
+        <div class="buttons">
+            <button onclick="kalkulatorLuas()">Hitung</button>
+            <button onclick="resetFormLuas()">Reset</button>
+        </div>
+        <p id="resultLuas"></p>
+    </section>
+    <!--END LUAS SEGITIGA-->
+    <div class="container-gambar">
+        <h1 id="keliling-segitiga">PENGHITUNG KELILING SEGITIGA</h1>
+        <img src="img/rumus-keliling-segitiga.png" alt="rumus-keliling-segitiga" width="350px">
+    </div>
+    <section class="input-luas-section" >
+        <label for="inputSisi1" id="label-sisi-1">(1) Sisi</label>
+        <input type="number" id="inputSisi1" class="hendri-input" placeholder="Masukkan Panjang Sisi Segitiga">
+
+        <label for="inputSisi2" id="label-sisi-2">(2) Sisi</label>
+            <input type="number" id="inputSisi2" class="hendri-input" placeholder="Masukkan Panjang Sisi Segitiga">
+
+        <label for="input-sisi-3" id="label-sisi-3">(3) Sisi</label>
+        <input type="number" id="inputSisi3" class="hendri-input" placeholder="Masukkan Panjang Sisi Segitiga">
+
+        <div class="buttons">
+            <button onclick="kalkulatorKeliling()">Hitung</button>
+            <button onclick="resetFormKeliling()">Reset</button>
+        </div>
+
+        <p id="resultKeliling"></p>
+    </section>
+</main>
+<footer>
+    <section>
+        <div class="social-media">
+                <ul class="ul-sosmed">
+                  <li class="li-sosmed"><a href="https://www.youtube.com/justkidding201"><i class="fab fa-youtube"></i></a></li>
+                  <li class="li-sosmed"><a href="https://www.linkedin.com/in/hendri-saputra-63114a28a/"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li class="li-sosmed"><a href="https://twitter.com/justkidding201_"><i class="fab fa-twitter"></i></a></li>
+                  <li class="li-sosmed"><a href="https://www.instagram.com/hendristpra"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+    </section>      
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
